@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <title>display book details</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body id="bdy">
+      <br>
+      <marquee behavior="scroll" direction="right" scrollamount="12" id="marque">Library Management System</marquee><br><br>
+      <div class="bg" id="home" style="background-image: url('http://getwallpapers.com/wallpaper/full/f/8/4/888661-beautiful-library-background-images-1920x1080-iphone.jpg');">
+        <form class="form1" name="form" action="lms.php" method="post">
+            <b>Username</b>
+            <input type="text" name="username" placeholder="enter username" name="username" required>
+            <b>Password</b>
+            <input type="password" name="password" placeholder="enter password" name="password" required>
+            <a href="file:///C:/Users/kavya/OneDrive/Desktop/prograd/lbs/lbs2.html#table1"><button type="submit" class="button">Login</button></a>
+            <br>
+            <p><b>&nbsp&nbsp&nbsp Login with social media</p></b>
+            &nbsp&nbsp&nbsp
+            <a href="https://google.com"><img src="https://tse2.mm.bing.net/th?id=OIP.HG6XtzIxf4Nbo_vZt8T3EAHaHa&pid=Api&P=0&h=180"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://facebook.com"><img src="https://tse1.mm.bing.net/th?id=OIP.hGaetDAQWapgIJbIOhPhXwHaHa&pid=Api&P=0&h=180"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://linkedin.com"><img src="https://tse2.mm.bing.net/th?id=OIP.w_zDkEJ9aLiWR-g0rff8hwHaHa&pid=Api&P=0&h=180"></a>
+          </form>
+        </div>
+        <br><br>
+        <form id="bgim">
+        <div>&nbsp&nbsp&nbsp&nbsp
+        <a href="#home"><input type="button" id="but" value="Home"></a>&nbsp&nbsp&nbsp
+        <a href="#about"><input type="button" id="but" value="About"></a>&nbsp&nbsp&nbsp
+        <a href="#table1"><input type="button" id="but" value="Display books"></a>&nbsp&nbsp
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by title">&nbsp&nbsp
+        <a href="#contact"><input type="button" id="but" value="contact"></a>
+        <br>
+       <br><br><br>
+        <div id="about">&nbsp&nbsp&nbsp&nbsp
+          <center><b>About</b></center><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <img src="https://tse2.mm.bing.net/th?id=OIP.3xc8kVabTOctte8hLiJvXgHaHa&pid=Api&P=0&h=180" id="im1">
+          <input type="button" value="easy login to lms portal" id="butts">&nbsp&nbsp&nbsp&nbsp
+          <img src="https://www.faronics.com/assets/Library-Management-System.jpg" id="im1">
+          <input type="button" value="fast search of books" id="butts">&nbsp&nbsp&nbsp&nbsp
+          <img src="https://tse2.mm.bing.net/th?id=OIP.AG8NKTd8mTTAwqChvdiOOAHaE3&pid=Api&P=0&h=180" id="im1">
+          <input type="button" value="easy access of books" id="butts">
+        </div>
+
+      <br><br><br>
+       <div id="table1">
+        <center><b>Books</b></center><br>
+        <table border="1" id="myTable">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Subject</th>
+                <th>number of copies</th>
+                <th>Publish-date</th>
+                <th>cart</th>
+            </tr>
+            <tr>
+                <td>A Better India: A Better World</td>
+                <td>Narayana Murthy</td>
+                <td>english</td>
+                <td>5</td>
+                <td>24-03-2009</td>
+                <td><input type='button' value='add to cart' onclick="fun()"></td>
+            </tr>
+            <tr>
+                <td>A Passage to India</td>
+                <td>E.M. Foster</td>
+                <td>english</td>
+                <td>6</td>
+                <td>5-03-2020</td>
+                <td><input type='button' value='add to cart'></td>
+            </tr>
+            <tr>
+                <td>A Revenue Stamp</td>
+                <td>Amrita Pritam</td>
+                <td>english</td>
+                <td>6</td>
+                <td>23-03-1998</td>
+                <td><input type='button' value='add to cart'></td>
+            </tr>
+            <tr>
+                <td>Death of a City</td>
+                <td>Amrita Pritam</td>
+                <td>english</td>
+                <td>8</td>
+                <td>15-09-2010</td>
+                <td><input type='button' value='add to cart'></td>
+            </tr>
+            <tr>
+                <td>Pinjar</td>
+                <td>Amrita Pritam</td>
+                <td>english</td>
+                <td>7</td>
+                <td>23-03-2009</td>
+                <td><input type='button' value='add to cart'></td>
+            </tr>
+            <tr>
+                <td>A Suitable Boy</td>
+                <td>Vikram Seth</td>
+                <td>english</td>
+                <td>6</td>
+                <td>23-05-1999</td>
+                <td><input type='button' value='add to cart'></td>
+            </tr>
+            <tr>
+              <td>A Tale of Two Cities</td>
+              <td>Charles Darwin</td>
+              <td>english</td>
+              <td>8</td>
+              <td>19-03-1980</td>
+              <td><input type='button' value='add to cart'></td>
+          </tr>
+          <tr>
+            <td>story telling</td>
+            <td>aristotle</td>
+            <td>english</td>
+            <td>10</td>
+            <td>23-03-2009</td>
+            <td><input type='button' value='add to cart'></td>
+        </tr>
+        <tr>
+          <td>David Copperfield</td>
+          <td>Charles Darwin</td>
+          <td>english</td>
+          <td>7</td>
+          <td>23-03-2009</td>
+          <td><input type='button' value='add to cart'></td>
+      </tr>
+      <tr>
+          <td>Oliver Twist</td>
+          <td>Charles Darwin</td>
+          <td>english</td>
+          <td>6</td>
+          <td>23-03-2009</td>
+          <td><input type='button' value='add to cart'></td>
+       </tr>
+      <tr>
+          <td>A Beautiful Mind</td>
+          <td>Sylvia Nasar</td>
+          <td>Mathematics</td>
+          <td>7</td>
+          <td>23-03-2009</td>
+          <td><input type='button' value='add to cart'></td>
+      </tr>
+      <tr>
+        <td>The Universe and the Teacup</td>
+        <td>K.C. Cole</td>
+        <td>Mathematics</td>
+        <td>7</td>
+        <td>19-03-1980</td>
+        <td><input type='button' value='add to cart'></td>
+     </tr>
+      <tr>
+        <td>The Number Sense</td>
+        <td>Stanislas Dehaene</td>
+        <td>Mathematics</td>
+        <td>15</td>
+        <td>18-10-2009</td>
+        <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+        <td>What is Mathematics, Really?</td>
+        <td>Reuben Hersh</td>
+        <td>Mathematics</td>
+        <td>7</td>
+        <td>11-03-2010</td>
+        <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+        <td>The Man Who Loved Only Numbers</td>
+        <td>By Paul Hoffman</td>
+        <td>Mathematics</td>
+        <td>13</td>
+        <td>23-03-2009</td>
+        <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+        <td>1089, and all that</td>
+        <td>David Acheson</td>
+        <td>Mathematics</td>
+        <td>10</td>
+        <td>11-03-2010</td>
+        <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>Emily Shuckburgh chooses Chaos</td>
+      <td>James Gleick</td>
+      <td>science</td>
+      <td>7</td>
+      <td>18-10-2009</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>Cassandra Coburn chooses Junk Food Monkeys</td>
+      <td>Robert Sapolsky</td>
+      <td>science</td>
+      <td>8</td>
+      <td>19-03-1980</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>Jim Down chooses Longitude</td>
+      <td>Dava Sobel</td>
+      <td>science</td>
+      <td>7</td>
+      <td>17-03-2009</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>Camilla Pang chooses Critical Mass </td>
+      <td>Philip Ball</td>
+      <td>science</td>
+      <td>7</td>
+      <td>10-03-2006</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>The India Story</td>
+      <td>Bimal Jalal</td>
+      <td>history</td>
+      <td>6</td>
+      <td>23-03-2023</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>A Place Called Home</td>
+      <td>Preeti Shenoy</td>
+      <td>history</td>
+      <td>7</td>
+      <td>23-03-2023</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>Lal Salam</td>
+      <td>Smriti Irani</td>
+      <td>history</td>
+      <td>5</td>
+      <td>23-03-2023</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>Queen of Fire</td>
+      <td>Devika Rangachari</td>
+      <td>history</td>
+      <td>6</td>
+      <td>23-05-1999</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>A Place Called Home</td>
+      <td>Preeti Shenoy</td>
+      <td>history</td>
+      <td>2</td>
+      <td>17-03-2009</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    <tr>
+      <td>The Maverick Effect</td>
+      <td>Harish Mehta</td>
+      <td>history</td>
+      <td>7</td>
+      <td>23-03-2023</td>
+      <td><input type='button' value='add to cart'></td>
+    </tr>
+    </table>
+      </div>
+      <br><br><br>
+      <div id="contact">
+        <center>
+        <form action="lms.php" method="post">
+            <center><b>Contact Details</b></center><br>
+            Name: <input type="text" id="con" name="name"><br>
+            E-mail:<input type="text" id="con" name="email"><br>
+            phone no:<input type="number" id="con" name="phoneno"><br><br>
+            Review:<textarea rows="5" cols="20" id="con" name="review">enter review</textarea>
+        </form></center>
+      </div>
+      <br><br><br><br>
+      
+        <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            </script>
+
+    </body>
+
+    </html>

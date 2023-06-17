@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+.bg{
+  /*  background-image: url('http://getwallpapers.com/wallpaper/full/f/8/4/888661-beautiful-library-background-images-1920x1080-iphone.jpg');*/
+    background-repeat: no-repeat;
+    min-height: 750px;
+    background-size: cover;
+    opacity: 0.7;
+}
+.form1{
+    color:white;
+    font-size:larger;
+    position:absolute;
+    left: 40%;
+    top: 25%;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    opacity:1;
+}
+input[type=text],
+input[type=password] {
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0px;
+    border: 2px solid;
+}
+.button {
+    background-color: antiquewhite;
+    color: brown;
+    padding:10px 5px;
+    border-color: black;
+    cursor: pointer;
+    width: 100%;
+}
+img{
+    width:30px;
+}
+#butts{
+    padding: 10px 5px;
+}
+table{
+    border:solid;
+    position:relative;
+    background-color: rgba(250, 235, 215, 0.922);
+    color:brown;
+    width:100%;
+    
+}
+#bdy{
+    background-color:rgba(255, 160, 122, 0.921);
+}
+#im{
+    width:50%;
+}
+#im1{
+    width:20%;
+}
+#myInput{
+   padding: 10px 5px;
+   width: 17%;
+}
+#but{
+    width:18%;
+    padding: 10px 5px;
+    left: 70px;
+    background-color: antiquewhite;
+}
+#bgim{
+    background-repeat:no-repeat;
+    opacity:0.8;
+    background-size: cover;
+}
+#bgm{
+    width:100%;
+}
+#con{
+    left: 40px;
+    width:500px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color:antiquewhite;
+}
+f1{
+    align:center;
+}
+center{
+    font-size: 30px;
+
+}
+#marque{
+    font-size: 30px;
+    color: brown;
+}
